@@ -30,8 +30,8 @@ df_scaler = pd.DataFrame(df_scaler, columns=df.columns)
 print(df_scaler)
 
 
-X = df_scaler.drop('ls',axis=1)
-y = df_scaler['ls']
+X = df_scaler.drop('max_temp',axis=1)
+y = df_scaler['max_temp']
 
 #polynomiral regression
 poly = PolynomialFeatures(degree=4)
